@@ -21,5 +21,9 @@ namespace WindowsFormsApplication1
         {
 
         }
+
+        private void username_TextChanged(object sender, EventArgs e)
+        {
+                    }
     }
 }
