@@ -88,6 +88,7 @@
             this.username.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.username.Location = new System.Drawing.Point(137, 44);
             this.username.Name = "username";
+            this.username.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.username.Size = new System.Drawing.Size(136, 20);
             this.username.TabIndex = 1;
             this.username.TextChanged += new System.EventHandler(this.username_TextChanged);
