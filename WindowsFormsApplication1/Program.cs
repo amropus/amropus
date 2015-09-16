@@ -16,7 +16,7 @@ namespace WindowsFormsApplication1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new WindowsFormsApplication1.Forms.AmRopussplash());
+            Application.Run(new WindowsFormsApplication1.NewFolder.Amropussplash1());
         }
     }
 }

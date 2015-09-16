@@ -44,6 +44,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AmRopussplash.cs" />
+    <Compile Include="AmRopussplash1.cs" />
+    <Compile Include="Amropussplash1_2.cs" />
+    <Compile Include="AmRopussplash1_3.cs" />
+    <Compile Include="AmRopussplash1_4.cs" />
     <Compile Include="Masterpage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -55,6 +60,12 @@
     </Compile>
     <Compile Include="NewFolder\Amropussplash1.Designer.cs">
       <DependentUpon>Amropussplash1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewFolder\collection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewFolder\collection.Designer.cs">
+      <DependentUpon>collection.cs</DependentUpon>
     </Compile>
     <Compile Include="NewFolder\mainwindow.cs">
       <SubType>Form</SubType>
@@ -69,6 +80,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NewFolder\Amropussplash1.resx">
       <DependentUpon>Amropussplash1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewFolder\collection.resx">
+      <DependentUpon>collection.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NewFolder\mainwindow.resx">
       <DependentUpon>mainwindow.cs</DependentUpon>
