@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms.cs" />
     <Compile Include="Masterpage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -55,6 +56,12 @@
     </Compile>
     <Compile Include="NewFolder\Amropussplash1.Designer.cs">
       <DependentUpon>Amropussplash1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewFolder\customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewFolder\customer.Designer.cs">
+      <DependentUpon>customer.cs</DependentUpon>
     </Compile>
     <Compile Include="NewFolder\mainwindow.cs">
       <SubType>Form</SubType>
@@ -69,6 +76,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NewFolder\Amropussplash1.resx">
       <DependentUpon>Amropussplash1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewFolder\customer.resx">
+      <DependentUpon>customer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NewFolder\mainwindow.resx">
       <DependentUpon>mainwindow.cs</DependentUpon>
