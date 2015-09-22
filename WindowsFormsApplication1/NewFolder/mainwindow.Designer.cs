@@ -30,22 +30,19 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.masterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.transactionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.reportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.settingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.customerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.transactionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.collectionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.generateBillToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.searchCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.billDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.collectionToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.dailyCollectionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.monthlyCollectionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.yearlyCollectionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.settingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.backUpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.changePasswordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.smsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.searchCustomerToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.dateWiseCollectionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,29 +63,53 @@
             // masterToolStripMenuItem
             // 
             this.masterToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.customerToolStripMenuItem});
+            this.customerToolStripMenuItem,
+            this.searchCustomerToolStripMenuItem1});
             this.masterToolStripMenuItem.Name = "masterToolStripMenuItem";
             this.masterToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
             this.masterToolStripMenuItem.Text = "Master";
             // 
+            // customerToolStripMenuItem
+            // 
+            this.customerToolStripMenuItem.Name = "customerToolStripMenuItem";
+            this.customerToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.customerToolStripMenuItem.Text = "Customer";
+            // 
             // transactionToolStripMenuItem
             // 
             this.transactionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.collectionToolStripMenuItem,
-            this.generateBillToolStripMenuItem});
+            this.collectionToolStripMenuItem});
             this.transactionToolStripMenuItem.Name = "transactionToolStripMenuItem";
             this.transactionToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
             this.transactionToolStripMenuItem.Text = "Transaction";
+            // 
+            // collectionToolStripMenuItem
+            // 
+            this.collectionToolStripMenuItem.Name = "collectionToolStripMenuItem";
+            this.collectionToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.collectionToolStripMenuItem.Text = "Collection";
             // 
             // reportsToolStripMenuItem
             // 
             this.reportsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.searchCustomerToolStripMenuItem,
             this.billDetailsToolStripMenuItem,
-            this.collectionToolStripMenuItem1});
+            this.dateWiseCollectionToolStripMenuItem});
             this.reportsToolStripMenuItem.Name = "reportsToolStripMenuItem";
             this.reportsToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
             this.reportsToolStripMenuItem.Text = "Reports";
+            // 
+            // searchCustomerToolStripMenuItem
+            // 
+            this.searchCustomerToolStripMenuItem.Name = "searchCustomerToolStripMenuItem";
+            this.searchCustomerToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.searchCustomerToolStripMenuItem.Text = "Customer List";
+            // 
+            // billDetailsToolStripMenuItem
+            // 
+            this.billDetailsToolStripMenuItem.Name = "billDetailsToolStripMenuItem";
+            this.billDetailsToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
+            this.billDetailsToolStripMenuItem.Text = "Bill Details";
             // 
             // settingToolStripMenuItem
             // 
@@ -99,64 +120,6 @@
             this.settingToolStripMenuItem.Name = "settingToolStripMenuItem";
             this.settingToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
             this.settingToolStripMenuItem.Text = "Setting";
-            // 
-            // customerToolStripMenuItem
-            // 
-            this.customerToolStripMenuItem.Name = "customerToolStripMenuItem";
-            this.customerToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.customerToolStripMenuItem.Text = "Customer";
-            // 
-            // collectionToolStripMenuItem
-            // 
-            this.collectionToolStripMenuItem.Name = "collectionToolStripMenuItem";
-            this.collectionToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.collectionToolStripMenuItem.Text = "Collection";
-            // 
-            // generateBillToolStripMenuItem
-            // 
-            this.generateBillToolStripMenuItem.Name = "generateBillToolStripMenuItem";
-            this.generateBillToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.generateBillToolStripMenuItem.Text = "Generate Bill";
-            // 
-            // searchCustomerToolStripMenuItem
-            // 
-            this.searchCustomerToolStripMenuItem.Name = "searchCustomerToolStripMenuItem";
-            this.searchCustomerToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
-            this.searchCustomerToolStripMenuItem.Text = "Search Customer";
-            // 
-            // billDetailsToolStripMenuItem
-            // 
-            this.billDetailsToolStripMenuItem.Name = "billDetailsToolStripMenuItem";
-            this.billDetailsToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
-            this.billDetailsToolStripMenuItem.Text = "Bill Details";
-            // 
-            // collectionToolStripMenuItem1
-            // 
-            this.collectionToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.dailyCollectionToolStripMenuItem,
-            this.monthlyCollectionToolStripMenuItem,
-            this.yearlyCollectionToolStripMenuItem});
-            this.collectionToolStripMenuItem1.Name = "collectionToolStripMenuItem1";
-            this.collectionToolStripMenuItem1.Size = new System.Drawing.Size(164, 22);
-            this.collectionToolStripMenuItem1.Text = "Collection";
-            // 
-            // dailyCollectionToolStripMenuItem
-            // 
-            this.dailyCollectionToolStripMenuItem.Name = "dailyCollectionToolStripMenuItem";
-            this.dailyCollectionToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
-            this.dailyCollectionToolStripMenuItem.Text = "Daily Collection";
-            // 
-            // monthlyCollectionToolStripMenuItem
-            // 
-            this.monthlyCollectionToolStripMenuItem.Name = "monthlyCollectionToolStripMenuItem";
-            this.monthlyCollectionToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
-            this.monthlyCollectionToolStripMenuItem.Text = "Monthly Collection";
-            // 
-            // yearlyCollectionToolStripMenuItem
-            // 
-            this.yearlyCollectionToolStripMenuItem.Name = "yearlyCollectionToolStripMenuItem";
-            this.yearlyCollectionToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
-            this.yearlyCollectionToolStripMenuItem.Text = "Yearly Collection";
             // 
             // backUpToolStripMenuItem
             // 
@@ -182,6 +145,18 @@
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.exitToolStripMenuItem.Text = "Exit";
             // 
+            // searchCustomerToolStripMenuItem1
+            // 
+            this.searchCustomerToolStripMenuItem1.Name = "searchCustomerToolStripMenuItem1";
+            this.searchCustomerToolStripMenuItem1.Size = new System.Drawing.Size(164, 22);
+            this.searchCustomerToolStripMenuItem1.Text = "Search Customer";
+            // 
+            // dateWiseCollectionToolStripMenuItem
+            // 
+            this.dateWiseCollectionToolStripMenuItem.Name = "dateWiseCollectionToolStripMenuItem";
+            this.dateWiseCollectionToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
+            this.dateWiseCollectionToolStripMenuItem.Text = "Date Wise Collection";
+            // 
             // mainwindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -205,19 +180,16 @@
         private System.Windows.Forms.ToolStripMenuItem customerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem transactionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem collectionToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem generateBillToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reportsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem searchCustomerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem billDetailsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem collectionToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem dailyCollectionToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem monthlyCollectionToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem yearlyCollectionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem settingToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem backUpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem changePasswordToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem smsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem searchCustomerToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem dateWiseCollectionToolStripMenuItem;
 
     }
 }

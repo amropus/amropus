@@ -56,17 +56,35 @@
     <Compile Include="NewFolder\Amropussplash1.Designer.cs">
       <DependentUpon>Amropussplash1.cs</DependentUpon>
     </Compile>
+    <Compile Include="NewFolder\bill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewFolder\bill.Designer.cs">
+      <DependentUpon>bill.cs</DependentUpon>
+    </Compile>
     <Compile Include="NewFolder\collection.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="NewFolder\collection.Designer.cs">
       <DependentUpon>collection.cs</DependentUpon>
     </Compile>
+    <Compile Include="NewFolder\customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewFolder\customer.Designer.cs">
+      <DependentUpon>customer.cs</DependentUpon>
+    </Compile>
     <Compile Include="NewFolder\mainwindow.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="NewFolder\mainwindow.Designer.cs">
       <DependentUpon>mainwindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewFolder\SearchCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewFolder\SearchCustomer.Designer.cs">
+      <DependentUpon>SearchCustomer.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -76,11 +94,20 @@
     <EmbeddedResource Include="NewFolder\Amropussplash1.resx">
       <DependentUpon>Amropussplash1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="NewFolder\bill.resx">
+      <DependentUpon>bill.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="NewFolder\collection.resx">
       <DependentUpon>collection.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="NewFolder\customer.resx">
+      <DependentUpon>customer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="NewFolder\mainwindow.resx">
       <DependentUpon>mainwindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewFolder\SearchCustomer.resx">
+      <DependentUpon>SearchCustomer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

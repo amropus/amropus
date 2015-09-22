@@ -45,19 +45,22 @@
             this.txtcharge = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnsave = new System.Windows.Forms.Button();
-            this.btncancel = new System.Windows.Forms.Button();
-            this.btnedit = new System.Windows.Forms.Button();
-            this.btnupdate = new System.Windows.Forms.Button();
             this.btndelete = new System.Windows.Forms.Button();
+            this.btnupdate = new System.Windows.Forms.Button();
+            this.btncancel = new System.Windows.Forms.Button();
+            this.btnsave = new System.Windows.Forms.Button();
+            this.btnedit = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.gridcust = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridcust)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -167,7 +170,7 @@
             // 
             // txtrent
             // 
-            this.txtrent.Location = new System.Drawing.Point(168, 252);
+            this.txtrent.Location = new System.Drawing.Point(168, 288);
             this.txtrent.Name = "txtrent";
             this.txtrent.Size = new System.Drawing.Size(81, 28);
             this.txtrent.TabIndex = 13;
@@ -176,7 +179,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(40, 252);
+            this.label6.Location = new System.Drawing.Point(40, 288);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(91, 18);
             this.label6.TabIndex = 12;
@@ -184,7 +187,7 @@
             // 
             // txtcharge
             // 
-            this.txtcharge.Location = new System.Drawing.Point(168, 286);
+            this.txtcharge.Location = new System.Drawing.Point(168, 322);
             this.txtcharge.Name = "txtcharge";
             this.txtcharge.Size = new System.Drawing.Size(81, 28);
             this.txtcharge.TabIndex = 15;
@@ -193,7 +196,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(40, 286);
+            this.label7.Location = new System.Drawing.Point(40, 322);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(124, 18);
             this.label7.TabIndex = 14;
@@ -202,6 +205,8 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.txtid);
             this.groupBox1.Controls.Add(this.txtcharge);
             this.groupBox1.Controls.Add(this.label1);
@@ -221,10 +226,27 @@
             this.groupBox1.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(92, 70);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(514, 330);
+            this.groupBox1.Size = new System.Drawing.Size(514, 357);
             this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Customer Details";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(168, 253);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(81, 28);
+            this.textBox2.TabIndex = 17;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(40, 253);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(113, 18);
+            this.label9.TabIndex = 16;
+            this.label9.Text = "Opening Balance";
             // 
             // label8
             // 
@@ -243,51 +265,13 @@
             this.panel1.Controls.Add(this.btnupdate);
             this.panel1.Controls.Add(this.btncancel);
             this.panel1.Controls.Add(this.btnsave);
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.btnedit);
             this.panel1.Location = new System.Drawing.Point(623, 70);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(97, 236);
             this.panel1.TabIndex = 18;
-            // 
-            // btnsave
-            // 
-            this.btnsave.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsave.Location = new System.Drawing.Point(10, 16);
-            this.btnsave.Name = "btnsave";
-            this.btnsave.Size = new System.Drawing.Size(75, 27);
-            this.btnsave.TabIndex = 16;
-            this.btnsave.Text = "Save";
-            this.btnsave.UseVisualStyleBackColor = true;
-            // 
-            // btncancel
-            // 
-            this.btncancel.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncancel.Location = new System.Drawing.Point(10, 103);
-            this.btncancel.Name = "btncancel";
-            this.btncancel.Size = new System.Drawing.Size(75, 27);
-            this.btncancel.TabIndex = 17;
-            this.btncancel.Text = "Cancel";
-            this.btncancel.UseVisualStyleBackColor = true;
-            // 
-            // btnedit
-            // 
-            this.btnedit.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnedit.Location = new System.Drawing.Point(10, 147);
-            this.btnedit.Name = "btnedit";
-            this.btnedit.Size = new System.Drawing.Size(75, 27);
-            this.btnedit.TabIndex = 18;
-            this.btnedit.Text = "Edit";
-            this.btnedit.UseVisualStyleBackColor = true;
-            // 
-            // btnupdate
-            // 
-            this.btnupdate.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnupdate.Location = new System.Drawing.Point(10, 190);
-            this.btnupdate.Name = "btnupdate";
-            this.btnupdate.Size = new System.Drawing.Size(75, 27);
-            this.btnupdate.TabIndex = 19;
-            this.btnupdate.Text = "Update";
-            this.btnupdate.UseVisualStyleBackColor = true;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // btndelete
             // 
@@ -299,22 +283,72 @@
             this.btndelete.Text = "Delete";
             this.btndelete.UseVisualStyleBackColor = true;
             // 
+            // btnupdate
+            // 
+            this.btnupdate.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnupdate.Location = new System.Drawing.Point(10, 189);
+            this.btnupdate.Name = "btnupdate";
+            this.btnupdate.Size = new System.Drawing.Size(75, 27);
+            this.btnupdate.TabIndex = 19;
+            this.btnupdate.Text = "Update";
+            this.btnupdate.UseVisualStyleBackColor = true;
+            // 
+            // btncancel
+            // 
+            this.btncancel.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncancel.Location = new System.Drawing.Point(10, 103);
+            this.btncancel.Name = "btncancel";
+            this.btncancel.Size = new System.Drawing.Size(75, 27);
+            this.btncancel.TabIndex = 17;
+            this.btncancel.Text = "Cancel";
+            this.btncancel.UseVisualStyleBackColor = true;
+            // 
+            // btnsave
+            // 
+            this.btnsave.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsave.Location = new System.Drawing.Point(10, 16);
+            this.btnsave.Name = "btnsave";
+            this.btnsave.Size = new System.Drawing.Size(75, 27);
+            this.btnsave.TabIndex = 16;
+            this.btnsave.Text = "Save";
+            this.btnsave.UseVisualStyleBackColor = true;
+            // 
+            // btnedit
+            // 
+            this.btnedit.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnedit.Location = new System.Drawing.Point(10, 147);
+            this.btnedit.Name = "btnedit";
+            this.btnedit.Size = new System.Drawing.Size(75, 27);
+            this.btnedit.TabIndex = 18;
+            this.btnedit.Text = "Edit";
+            this.btnedit.UseVisualStyleBackColor = true;
+            // 
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.dataGridView1);
-            this.panel2.Location = new System.Drawing.Point(92, 433);
+            this.panel2.Controls.Add(this.gridcust);
+            this.panel2.Location = new System.Drawing.Point(92, 456);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(514, 108);
             this.panel2.TabIndex = 20;
             // 
-            // dataGridView1
+            // gridcust
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 9);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(488, 86);
-            this.dataGridView1.TabIndex = 0;
+            this.gridcust.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridcust.Location = new System.Drawing.Point(12, 9);
+            this.gridcust.Name = "gridcust";
+            this.gridcust.Size = new System.Drawing.Size(488, 86);
+            this.gridcust.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(10, 156);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 27);
+            this.button1.TabIndex = 18;
+            this.button1.Text = "Edit";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // customer
             // 
@@ -332,7 +366,7 @@
             this.groupBox1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridcust)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -365,6 +399,9 @@
         private System.Windows.Forms.Button btncancel;
         private System.Windows.Forms.Button btnsave;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView gridcust;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button button1;
     }
 }

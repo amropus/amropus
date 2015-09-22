@@ -16,5 +16,10 @@ namespace WindowsFormsApplication1.NewFolder
         {
             InitializeComponent();
         }
+
+        private void collectionToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
